@@ -5,11 +5,17 @@
 }
 
 .navi {
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .mainul {
     display: flex;
+    transition-duration: 3s;
+}
+
+.mainul li:hover {
+    color: #0000ff;
+    cursor: pointer;
 }
 
 .firstp {
@@ -53,6 +59,15 @@
     width: 100%;
 }
 
+.mainpill {
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
 .pill {
     background-color: #fff;
     color: #0000ff;
@@ -88,18 +103,21 @@
     display: flex;
     padding: 50px;
     width: 100%;
+    /* border: 5px #fff solid; */
 }
 
 .whyus{
     text-align: justify;
     padding: 50px;
     width: 50%;
+    /* border: 2px #0066ff solid; */
 }
 
 .vision{
     text-align: justify;
     padding: 50px;
     width: 50%;
+    /* border: 2px #0066ff solid; */
 }
 
 .featuresvid{
@@ -142,7 +160,7 @@
         width: 110px;
         font-size: 14px;
         top: 50px;
-        left: 56.25%; /* 180px/320 */
+        left: 56%; /* 180px/320 */
         transition-duration: 5s;
     }
 
@@ -176,7 +194,7 @@
         width: 120px;
         font-size: 14px;
         top: 50px;
-        left: 65%;
+        left: 63%;
         transition-duration: 5s;
     }
 
@@ -340,4 +358,16 @@
         width: 100%;
     }
 
+}
+
+@media screen and (min-width: 901px) and (max-width: 1350px) {
+    .navi {
+        padding: 20px 15px;
+    }
+    
+    .mainpill {
+        gap: 10px;
+        padding: 10px 3px;
+        font-size: 15px;
+    }
 }
